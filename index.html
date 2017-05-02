@@ -12,9 +12,9 @@
     <div class="input">
       <input type="text" placeholder="Add stuff..." ng-model="todo">
       <button type="button" ng-click="addItem(todo)">Add</button>
-      <input type="text" placeholder="Filter" ng-model="filter">
+      <input type="text" placeholder="Filter" ng-model="filterStuff">
 
-      <div ng-repeat="todo in todoList track by $index">
+      <div ng-repeat="todo in todoList | filter: filterStuff track by $index">
         <img src="images/x.png" ng-click="remove($index)"><p> {{ todo }} </p>
       </div>
     </div>
