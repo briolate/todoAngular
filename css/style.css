@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'The Girl Next Door', cursive;
+  background-image: url('../images/paper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.input {
+  text-align: center;
+}
+
+p {
+  border: 2px solid black;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}

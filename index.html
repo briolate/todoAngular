@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="myModule" ng-controller="myController">
+
+    <h1>To-Do List</h1>
+
+    <div class="input">
+      <input type="text" placeholder="Add stuff..." ng-model="todo">
+      <button type="button" ng-click="addItem(todo)">Add</button>
+      <input type="text" placeholder="Filter" ng-model="filter">
+
+      <div ng-repeat="todo in todoList track by $index">
+        <img src="images/x.png" ng-click="remove($index)"><p> {{ todo }} </p>
+      </div>
+    </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- track by $index ADD TO ng-repeat************ -->
